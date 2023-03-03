@@ -1,0 +1,32 @@
+1. Writing to a csv with and unneccesary index. Remove this with setting index = False.
+2. Using column names that include spaces. You should use the underscore inplace of spaces. It makes querying simpler.
+3. Not leveraging the query method. df.query('Year' < 1980)
+4. Using string methods to formulate your query strings.
+   Example: 
+	min_year = 1980
+	min_time = 10
+	df = df.query('Year < @min_year' and Time > @min_time')
+5. Using inplace=True. It is better to overwrite using modifications.
+6. Not using vectorization insted of iteration.
+7. Using the apply method when vectorization is an option.
+8. When creating a subset from original data frame and not using the copy() method. When we will update the new dataframe also the old subset of original dataframe will be affected.
+9. Not chaining formulas is better than creating many intermediate dataframes.
+10. Not properly setting the column dtypes. parse_dates=['Date']
+11. Using the string value instead of a boolean.
+12. Not levearaging pandas plot method and using matplotlib instead.
+13. Using apply, etc... instead of pandas str.upper()
+14. Repeating commonly used data transformations, instead you should create a function that will allow you to speed up the process. -> creating a data pipeline.
+15. Manually renaming columns -> you should use the rename function.
+16. Not using proper way of grouping values.
+17. Not using proper way of complex grouping values.
+18. Not using percent_change or difference that can be now implemented with a function.
+19. Not saving time and space with a large datasets with pickle, parquet, feather formats.
+20. Not using conditional format like in Microsoft Excel
+21. Not using suffixes while merging TWO dataframes.
+22. Not using check merging is success with validation.
+23. Not using wrapping expression so they are readable
+24. Not using categorical datatypes to use less space.
+25. Creating duplicated columns.
+
+
+
