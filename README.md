@@ -7,3 +7,4 @@ Then I created the ratios of likes, dislikes and views and exported as Excel fil
 
 The second code file named PopularChannels was used to answer the third question. I had to choose popular channels in most countries. I merged the 2 files for every country like before, Then grouped by channel_title and calculated the sum of likes, dislikes and views. I sorted the updated dataset by channel views and selected the top 50 of every country. I append each countries top 50 channels in a grouped dataset. I then grouped the total list by channel_title and sort the channels by size. This is how I got most popular channels on top and limited the number of channels to 20, because I checked and the 20 most popular channel was the last one being popular in more than half countries. I exported the file as Excel. 
 
+The file Mistakes in Pandas to avoid I created following a youtube video that shows commmon mistakes beginners makes in Pandas.
